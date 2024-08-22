@@ -14,8 +14,8 @@ router
 .get(wrapAsync(listingController.index))
 .post(
   isLoggedIn,
-  validateListing,
   upload.single('listing[image]'),
+  validateListing,
   wrapAsync(listingController.createListing)
 );
 
@@ -23,7 +23,7 @@ router
 router.get("/new", isLoggedIn,listingController.renderNewForm);
 
 router.route("/:id")
-.get(wrapAsync(listingController.showListing))
+.get(wrapAsync(listingController.showListings))
 .put(
   isLoggedIn,
   isOwner,
@@ -45,4 +45,3 @@ router.route("/:id")
   );
  
 module.exports=router;
-  
