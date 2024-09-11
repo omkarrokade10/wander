@@ -34,7 +34,7 @@ router.route("/:id")
 .delete(
   isLoggedIn,
   isOwner, 
-  wrapAsync(listingController.destroyListing)
+  wrapAsync(listingController.deleteListing)
 );
   
   //Edit Route

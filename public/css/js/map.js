@@ -16,3 +16,4 @@ const marker=new mapboxgl.Marker()
     )
 )
 .addTo(map);
+

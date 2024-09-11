@@ -77,10 +77,30 @@ body{
     background-color: white;
 }
 
+.add-btn{
+    background-color: #fe424d !important;
+}
+
+/* edit page */
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
 /* show page */
 .show-img{
     height: 30vh;
 }
+
+.btns{
+    display: flex;
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* Map Styling */
 #map { 
     height: 400px;
